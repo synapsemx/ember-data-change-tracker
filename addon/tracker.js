@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import { didModelChange, didModelsChange, relationShipTransform, relationshipKnownState } from './utilities';
 
-const assign = Ember.assign || Ember.merge;
+const assign = Object.assign || Ember.merge;
 export const ModelTrackerKey = '-change-tracker';
 export const RelationshipsKnownTrackerKey = '-change-tracker-relationships-known';
 const alreadyTrackedRegex = /^-mf-|string|boolean|date|^number$/,
